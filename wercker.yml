@@ -1,0 +1,11 @@
+box:
+  id: store/oracle/serverjre
+  username: $DOCKER_USERNAME
+  password: $DOCKER_PASSWORD
+  tag: 8
+
+# this pipeline step will call hello-step to print out hello, name
+build:
+  steps: 
+    - justin-hoang/hello-step@0.1.3:
+      myname: "Dam"
